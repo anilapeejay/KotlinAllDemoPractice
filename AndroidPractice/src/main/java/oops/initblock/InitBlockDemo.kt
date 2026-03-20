@@ -1,4 +1,4 @@
-package initblock
+package oops.initblock
 
 /*
 * use init block to initialize the properties of class

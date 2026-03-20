@@ -1,4 +1,4 @@
-package initblock
+package oops.initblock
 
 class MultiInitBlocks {
 

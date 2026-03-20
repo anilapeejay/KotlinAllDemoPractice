@@ -1,4 +1,4 @@
-package constructor_demo.primary
+package oops.constructor_demo.primary
 
 class Student_ConstructorWithDefaultValue(val name: String, val age: Int = 25) {
     init {

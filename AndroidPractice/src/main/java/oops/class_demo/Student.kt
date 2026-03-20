@@ -1,4 +1,4 @@
-package class_demo
+package oops.class_demo
 
 private class Student {
      var name: String = ""

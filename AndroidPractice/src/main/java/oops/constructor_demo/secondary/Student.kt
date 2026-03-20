@@ -1,4 +1,4 @@
-package constructor_demo.secondary
+package oops.constructor_demo.secondary
 
 /*
 * Secondary Constructor

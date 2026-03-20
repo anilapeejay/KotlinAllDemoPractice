@@ -1,4 +1,4 @@
-package constructor_demo.primary
+package oops.constructor_demo.primary
 
 /* primary constructor
 * use with class name
