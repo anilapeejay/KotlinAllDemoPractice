@@ -1,4 +1,4 @@
-package specialclasses
+package sealed
 
 /*
 * A sealed class in Kotlin is a special type of class used to represent a restricted hierarchy—meaning all possible subclasses are known at compile time.
@@ -11,18 +11,18 @@ Works perfectly with when expressions (no need for else)
 *
 *No else needed because Kotlin knows all subclasses of Result.
 * */
-sealed class Result {
-    data class Success(val data: String) : Result()
-    data class Error(val message: String) : Result()
+sealed class SealedDemo {
+    data class Success(val data: String) : SealedDemo()
+    data class Error(val message: String) : SealedDemo()
 
 }
 
-fun handleResult(result: Result) {
+fun handleResult(result: SealedDemo) {
     when (result) {
-        is Result.Success -> {
+        is SealedDemo.Success -> {
             println("Success: ${result.data}")
         }
-        is Result.Error -> {
+        is SealedDemo.Error -> {
             println("Error: ${result.message}")
         }
     }

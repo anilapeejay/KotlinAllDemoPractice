@@ -1,4 +1,4 @@
-package specialclasses
+package sealed
 
 /*
 * Nested Sealed class demo
