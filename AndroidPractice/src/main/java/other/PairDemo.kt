@@ -1,7 +1,7 @@
 package other
 /*
 * Pair is a generic class that represents a pair of two values.
-*
+* data class Pair<out A, out B>(val first: A, val second: B)
 * */
 class PairDemo {
     fun getCoordinates() : Pair<Double, Int>{
