@@ -10,6 +10,15 @@ class TripleDemo {
     fun getStudentData() : Triple<Int, String, Boolean>{
         return Triple(34, "Anil", true)
     }
+
+    // return a triple of api response using function getApiResponse()
+    fun getApiResponse() : Triple<Int, String, Boolean>{
+        val responseMessage = "Success"
+        val responseCode = 200
+        val isSuccess = true
+        return Triple(responseCode, responseMessage, isSuccess)
+    }
+
 }
 
 fun main(){
@@ -25,5 +34,17 @@ fun main(){
     println()
     val student = TripleDemo()
     println("Result : ${student.getStudentData().first} ${student.getStudentData().second} ${student.getStudentData().third}")
+
+    println()
+    val apiResponse = TripleDemo().getApiResponse()
+    println("Result : ${apiResponse.first} ${apiResponse.second} ${apiResponse.third}")
+
+    println()
+    val person = listOf(Triple(24, "Anil", "Agra"),
+        Triple(28, "Rahul", "Kanpur"),
+        Triple(34, "Rajesh", "Delhi"))
+
+    for (items in person)
+        println("Result : ${items.first} ${items.second} ${items.third}")
 
 }
