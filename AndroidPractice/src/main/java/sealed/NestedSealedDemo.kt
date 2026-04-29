@@ -14,9 +14,9 @@ sealed class NestedSealedDemo {
 
 fun handleResult(result: NestedSealedDemo){
     when(result){
-        NestedSealedDemo.Error.Network -> TODO()
-        NestedSealedDemo.Error.Server -> TODO()
-        is NestedSealedDemo.Success -> TODO()
-        is NestedSealedDemo.Error.Failure -> TODO()
+        is NestedSealedDemo.Success ->  println("Data: ${result.data}")
+        is NestedSealedDemo.Error.Network ->  println("No Internet")
+        is NestedSealedDemo.Error.Server -> println("Server Error")
+        is NestedSealedDemo.Error.Failure ->  println("Error: ${result.message}")
     }
 }
